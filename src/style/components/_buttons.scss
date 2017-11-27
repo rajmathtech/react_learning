@@ -1,0 +1,36 @@
+.big-button{
+    background:$btn-col; 
+    border: none;
+    border-bottom: 0.6rem solid darken($btn-col, 10%);
+    font-weight: bold;
+    font-size: $l-size;
+    color:white;
+    width: 100%;
+    margin-bottom: $xl-size;
+    padding: 2.4rem;
+}
+.big-button:disabled{
+    opacity: 0.5;
+}
+.small-button{
+    background:$btn-col; 
+    border: none;
+    border-bottom: 0.3rem solid darken($btn-col, 10%);
+    font-weight: 500;
+    color:white;
+    // margin-bottom: $xl-size;
+    padding: $s-size;
+}
+//modifier of BEM
+.small-button--link{
+    background:none; 
+    border: none;
+    font-weight: 500;
+    color:$off-white;
+    padding: 0;
+}
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+      margin-bottom: $xl-size;
+    }
+  }
